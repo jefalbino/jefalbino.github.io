@@ -1,168 +1,197 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html prefix="og: http://ogp.me/ns#">
-<head>
-    <link rel="stylesheet" type="text/css" href="/jsmart/css/jsmart.min.css">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="JSmart Web Framework - Java Web Development Framework">
-    <meta property="og:description" content="JSmart is a powerful, open source, web framework for the Java platform aimed to improve developers productivity and experience thanks to easy and centralized way to setup the application, variety of web components integrated with Bootstrap v3.3.5, action based programming, asynchronous programming and integration with Spring 4 and EJB 3.">
-    <meta property="og:url" content="http://www.jsmartframework.com">
-    <meta property="og:image" content="http://www.jsmartframework.com/logo.png">
-    <title>JSmart Web Framework - Java Web Development Framework</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/prettify/prettify.css">
-    <script async="" src="//www.google-analytics.com/analytics.js"></script>
-    <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-69775107-1', 'auto');
-          ga('send', 'pageview');
-    </script>
-</head>
-<body data-spy="scroll" data-target="#menu-scroll-spy" onload="prettyPrint();">
-    <nav class="main-nav navbar navbar-default">
-        <div class="container container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/jsmart/css/jsmart.min.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="JSmart Web Framework - Java Web Development Framework">
+        <meta property="og:description" content="JSmart is a powerful, open source, web framework for the Java platform aimed to improve developers productivity and experience thanks to easy and centralized way to setup the application, variety of web components integrated with Bootstrap v3.3.5, action based programming, asynchronous programming and integration with Spring 4 and EJB 3.">
+        <meta property="og:url" content="http://www.jsmartframework.com">
+        <meta property="og:image" content="http://www.jsmartframework.com/logo.png">
+        <title>JSmart Web Framework - Java Web Development Framework</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/prettify/prettify.css">
+        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-69775107-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body data-spy="scroll" data-target="#menu-scroll-spy" onload="prettyPrint();">
+        <nav class="main-nav navbar navbar-default">
+            <div class="container container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                <a id="4gaqlbiufo2ei" href="/index.html" class="btn btn-link navbar-brand">JSmart Web Framework</a>
-            </div>
-            <div id="navbar-content" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a id="jlsoivshrsg6k" href="/starting.html" class="btn btn-link">
+                    </button>
+                    <a id="4gaqlbiufo2ei" href="/index.html" class="btn btn-link navbar-brand">JSmart Web Framework</a>
+                </div>
+                <div id="navbar-content" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a id="jlsoivshrsg6k" href="/starting.html" class="btn btn-link">
                             <span side="left" aria-hidden="true" id="h4flek5qqn32y" class="js5-icon glyphicon glyphicon-pushpin"></span>
                             Getting Started
-                        </a>
-                    </li>
-                    <li>
-                        <a id="luga4ujfiabu4" href="/components.html" class="btn btn-link">
+                            </a>
+                        </li>
+                        <li>
+                            <a id="luga4ujfiabu4" href="/components.html" class="btn btn-link">
                             <span side="left" aria-hidden="true" id="ki4cfnlfocwiu" class="js5-icon glyphicon glyphicon-king"></span>
                             Components
-                        </a>
-                    </li>
-                    <li>
-                        <a id="kyqh53waojvy6" href="/download.html" class="btn btn-link">
+                            </a>
+                        </li>
+                        <li>
+                            <a id="kyqh53waojvy6" href="/download.html" class="btn btn-link">
                             <span side="left" aria-hidden="true" id="h6ggi643hvpoi" class="js5-icon glyphicon glyphicon-save"></span>
                             Download
-                        </a>
-                    </li>
-                    <li>
-                        <a id="537ha2xlwih72" href="/examples.html" class="btn btn-link">
+                            </a>
+                        </li>
+                        <li>
+                            <a id="537ha2xlwih72" href="/examples.html" class="btn btn-link">
                             <span side="left" aria-hidden="true" id="zusospkwdfdfi" class="js5-icon glyphicon glyphicon-flash"></span>
                             Examples
-                        </a>
-                    </li>
-                    <li>
-                        <a id="mdqmw2cfs3jfw" href="/documentation.html" class="btn btn-link">
+                            </a>
+                        </li>
+                        <li>
+                            <a id="mdqmw2cfs3jfw" href="/documentation.html" class="btn btn-link">
                             <span side="left" aria-hidden="true" id="cddhopbe4za6o" class="js5-icon glyphicon glyphicon-education"></span>
                             Documentation
-                        </a>
-                    </li>
-                    <li>
-                        <a id="4peawhys5etu6" href="/javascript.html" class="btn btn-link">
+                            </a>
+                        </li>
+                        <li>
+                            <a id="4peawhys5etu6" href="/javascript.html" class="btn btn-link">
                             <span side="left" aria-hidden="true" id="66owo62a72ppi" class="js5-icon glyphicon glyphicon-knight"></span>
                             JavaScript
-                        </a>
-                    </li>
-                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-<main>
-    <div class="header">
-        <div class="container"><h1 style="text-align: center;">JSmart Web Framework</h1>
-            <p class="lead" style="text-align: center;"> Web application framework integrated with Bootstrap v3 for
-                developing responsive, mobile first projects on the web with smooth server integration </p>
-            <div style="text-align: center; margin-top: 20px;"><a id="header-btn" href="/starting.html"
-                                                                  class="btn btn-default">Getting Started</a></div>
-        </div>
-    </div>
-    <div class="container"><h2 style="text-align: center; margin-bottom: 30px;"> An open source Java and JavaScript
-        based web application framework </h2>
-        <p style="text-align: center; margin-bottom: 70px;"> JSmart is a powerful, open source, web framework for the
-            Java platform aimed to improve developers productivity and experience thanks to easy and centralized way to
-            setup the application, variety of web components integrated with Bootstrap v3.3.5, action based programming,
-            asynchronous programming and integration with Spring 4 and EJB 3. </p>
-        <div style="width: 100%; display: inline-block;">
-            <div class="col-md-6">
-                <div class="media" style="margin-bottom: 40px;">
-                    <div class="media-left"><span side="left" aria-hidden="true" style="font-size: 50px;"
-                                                  id="zqyshhgl3q74k" class="js5-icon glyphicon glyphicon-fire"></span>
+        </nav>
+        <main>
+            <div class="header">
+                <div class="container">
+                    <h1 style="text-align: center;">JSmart Web Framework</h1>
+                    <p class="lead" style="text-align: center;"> Web application framework integrated with Bootstrap v3 for
+                        developing responsive, mobile first projects on the web with smooth server integration 
+                    </p>
+                    <div style="text-align: center; margin-top: 20px;"><a id="header-btn" href="/starting.html"
+                        class="btn btn-default">Getting Started</a></div>
+                </div>
+            </div>
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 30px;"> An open source Java and JavaScript
+                    based web application framework 
+                </h2>
+                <p style="text-align: center; margin-bottom: 70px;"> JSmart is a powerful, open source, web framework for the
+                    Java platform aimed to improve developers productivity and experience thanks to easy and centralized way to
+                    setup the application, variety of web components integrated with Bootstrap v3.3.5, action based programming,
+                    asynchronous programming and integration with Spring 4 and EJB 3. 
+                </p>
+                <div style="width: 100%; display: inline-block;">
+                    <div class="col-md-6">
+                        <div class="media" style="margin-bottom: 40px;">
+                            <div class="media-left"><span side="left" aria-hidden="true" style="font-size: 50px;"
+                                id="zqyshhgl3q74k" class="js5-icon glyphicon glyphicon-fire"></span>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><strong>Powerful components</strong></h4>
+                                <p> Variety of built-in components support, based on custom tag libs to generate HTML elements
+                                    with CSS3. All you need to build modern web applications. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media" style="margin-bottom: 40px;">
+                            <div class="media-left"><span side="left" aria-hidden="true" style="font-size: 50px;"
+                                id="urblpw5s7wvma" class="js5-icon glyphicon glyphicon-bold"></span>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><strong>Bootstrap integration</strong></h4>
+                                <p> Action based components integrated with Bootstrap v3.3.5 to provide great look and feel
+                                    following the standards of HTML5 and CSS3 for mobile first web applications. 
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="media-body"><h4 class="media-heading"><strong>Powerful components</strong></h4>
-                        <p> Variety of built-in components support, based on custom tag libs to generate HTML elements
-                            with CSS3. All you need to build modern web applications. </p></div>
-                </div>
-                <div class="media" style="margin-bottom: 40px;">
-                    <div class="media-left"><span side="left" aria-hidden="true" style="font-size: 50px;"
-                                                  id="urblpw5s7wvma" class="js5-icon glyphicon glyphicon-bold"></span>
+                    <div class="col-md-6">
+                        <div class="media" style="margin-bottom: 40px;">
+                            <div class="media-left"><span side="left" aria-hidden="true" style="font-size: 50px;"
+                                id="pcd5iizobvozi"
+                                class="js5-icon glyphicon glyphicon-thumbs-up"></span></div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><strong>Smooth Java integration</strong></h4>
+                                <p> Seamlessly and transparently integrates with Java Web and Application containers, such as
+                                    Tomcat, Jetty, JBoss and Glassfish. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media" style="margin-bottom: 40px;">
+                            <div class="media-left"><span side="left" aria-hidden="true" style="font-size: 50px;"
+                                id="27htuopxje2iu"
+                                class="js5-icon glyphicon glyphicon-briefcase"></span></div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><strong>Spring and EJB support</strong></h4>
+                                <p> Integrated support for EJB 3 and Spring 4 frameworks for dependency injection and much more.
+                                    All you need to speed up your development and provide latest technology features. 
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="media-body"><h4 class="media-heading"><strong>Bootstrap integration</strong></h4>
-                        <p> Action based components integrated with Bootstrap v3.3.5 to provide great look and feel
-                            following the standards of HTML5 and CSS3 for mobile first web applications. </p></div>
+                </div>
+                <div style="width: 100%; display: inline-block;">
+                    <div class="col-md-4" style="margin-top: 20px;">
+                        <div>
+                            <h3>Getting started</h3>
+                            <p> Check <a id="xlu7zdrab5k2a" href="/starting.html" class="btn btn-link link-plain">Getting started</a>
+                                instructions to learn how to begin developing with JSmart. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-top: 20px;">
+                        <div>
+                            <h3>Components</h3>
+                            <p> Take a look at our <a id="6n376wg4kcnko" href="/components.html" class="btn btn-link link-plain">Components</a>
+                                to see live the various built-in components and how to use them. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-top: 20px;">
+                        <div>
+                            <h3>Documentation</h3>
+                            <p> If you want to take a look under the hood of JSmart, go check the <a id="sufe2bczwd3g4"
+                                href="/documentation.html"
+                                class="btn btn-link link-plain">Documentation</a>
+                                page. 
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="media" style="margin-bottom: 40px;">
-                    <div class="media-left"><span side="left" aria-hidden="true" style="font-size: 50px;"
-                                                  id="pcd5iizobvozi"
-                                                  class="js5-icon glyphicon glyphicon-thumbs-up"></span></div>
-                    <div class="media-body"><h4 class="media-heading"><strong>Smooth Java integration</strong></h4>
-                        <p> Seamlessly and transparently integrates with Java Web and Application containers, such as
-                            Tomcat, Jetty, JBoss and Glassfish. </p></div>
-                </div>
-                <div class="media" style="margin-bottom: 40px;">
-                    <div class="media-left"><span side="left" aria-hidden="true" style="font-size: 50px;"
-                                                  id="27htuopxje2iu"
-                                                  class="js5-icon glyphicon glyphicon-briefcase"></span></div>
-                    <div class="media-body"><h4 class="media-heading"><strong>Spring and EJB support</strong></h4>
-                        <p> Integrated support for EJB 3 and Spring 4 frameworks for dependency injection and much more.
-                            All you need to speed up your development and provide latest technology features. </p></div>
-                </div>
+        </main>
+        <footer>
+            <div class="container">
+                <p> Code licensed under <a id="l456la6zjcqqk"
+                    href="http://www.gnu.org/licenses/lgpl-3.0.html"
+                    class="btn btn-link link-plain" target="_blank"> GNU Lesser
+                    General Public License, Version 3.0 </a> <br> Created by <a id="iefbb7oi2s67u"
+                        href="https://br.linkedin.com/in/jefalbino"
+                        class="btn btn-link link-plain" target="_blank">
+                    Jeferson Albino </a> <br> Clone the JSmart Web Framework on <a id="ow675f42rsp2u"
+                        href="https://github.com/jefalbino/jsmart-web"
+                        class="btn btn-link link-plain" target="_blank">
+                    GitHub </a>
+                </p>
             </div>
-        </div>
-        <div style="width: 100%; display: inline-block;">
-            <div class="col-md-4" style="margin-top: 20px;">
-                <div><h3>Getting started</h3>
-                    <p> Check <a id="xlu7zdrab5k2a" href="/starting.html" class="btn btn-link link-plain">Getting started</a>
-                        instructions to learn how to begin developing with JSmart. </p></div>
-            </div>
-            <div class="col-md-4" style="margin-top: 20px;">
-                <div><h3>Components</h3>
-                    <p> Take a look at our <a id="6n376wg4kcnko" href="/components.html" class="btn btn-link link-plain">Components</a>
-                        to see live the various built-in components and how to use them. </p></div>
-            </div>
-            <div class="col-md-4" style="margin-top: 20px;">
-                <div><h3>Documentation</h3>
-                    <p> If you want to take a look under the hood of JSmart, go check the <a id="sufe2bczwd3g4"
-                                                                                             href="/documentation.html"
-                                                                                             class="btn btn-link link-plain">Documentation</a>
-                        page. </p></div>
-            </div>
-        </div>
-    </div>
-</main>
-<footer>
-    <div class="container"><p> Code licensed under <a id="l456la6zjcqqk"
-                                                      href="http://www.gnu.org/licenses/lgpl-3.0.html"
-                                                      class="btn btn-link link-plain" target="_blank"> GNU Lesser
-        General Public License, Version 3.0 </a> <br> Created by <a id="iefbb7oi2s67u"
-                                                                    href="https://br.linkedin.com/in/jefalbino"
-                                                                    class="btn btn-link link-plain" target="_blank">
-        Jeferson Albino </a> <br> Clone the JSmart Web Framework on <a id="ow675f42rsp2u"
-                                                                       href="https://github.com/jefalbino/jsmart-web"
-                                                                       class="btn btn-link link-plain" target="_blank">
-        GitHub </a></p></div>
-</footer>
-    <script type="text/javascript" src="/jsmart/js/jsmart.min.js"></script>
-    <script type="text/javascript" src="/prettify/prettify.js"></script>
-</body>
+        </footer>
+        <script type="text/javascript" src="/jsmart/js/jsmart.min.js"></script>
+        <script type="text/javascript" src="/prettify/prettify.js"></script>
+    </body>
 </html>

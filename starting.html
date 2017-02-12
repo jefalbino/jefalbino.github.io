@@ -1,290 +1,323 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html prefix="og: http://ogp.me/ns#">
-<head>
-    <link rel="stylesheet" type="text/css" href="/jsmart/css/jsmart.min.css">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="JSmart Web Framework - Java Web Development Framework">
-    <meta property="og:description" content="JSmart is a powerful, open source, web framework for the Java platform aimed to improve developers productivity and experience thanks to easy and centralized way to setup the application, variety of web components integrated with Bootstrap v3.3.5, action based programming, asynchronous programming and integration with Spring 4 and EJB 3.">
-    <meta property="og:url" content="http://www.jsmartframework.com">
-    <meta property="og:image" content="http://www.jsmartframework.com/logo.png">
-    <title>JSmart Web Framework - Java Web Development Framework</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/prettify/prettify.css">
-    <script async="" src="//www.google-analytics.com/analytics.js"></script>
-    <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-69775107-1', 'auto');
-          ga('send', 'pageview');
-    </script>
-</head>
-<body data-spy="scroll" data-target="#menu-scroll-spy" onload="prettyPrint();">
-<nav class="main-nav navbar navbar-default">
-    <div class="container container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content">
-                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
-                    class="icon-bar"></span> <span class="icon-bar"></span></button>
-            <a id="5hroeocx2pqnu" href="/index.html" class="btn btn-link navbar-brand">JSmart Web Framework</a></div>
-        <div id="navbar-content" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a id="ozvbdgbxvnrro" href="/starting.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                      id="vhoraq3ih2sko"
-                                                                                      class="js5-icon glyphicon glyphicon-pushpin"></span>
-                    Getting Started</a></li>
-                <li><a id="p4virx7udcs2m" href="/components.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                        id="b3qnmv6vgn4ny"
-                                                                                        class="js5-icon glyphicon glyphicon-king"></span>
-                    Components</a></li>
-                <li><a id="bxqogp4ku2cfs" href="/download.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                      id="jdv27ayq43do4"
-                                                                                      class="js5-icon glyphicon glyphicon-save"></span>
-                    Download</a></li>
-                <li><a id="6e3fkf5d5clkg" href="/examples.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                      id="n4polrii465ha"
-                                                                                      class="js5-icon glyphicon glyphicon-flash"></span>
-                    Examples</a></li>
-                <li><a id="bsxsmjjt76xhg" href="/documentation.html" class="btn btn-link"><span side="left"
-                                                                                           aria-hidden="true"
-                                                                                           id="tck3bkunfxhvu"
-                                                                                           class="js5-icon glyphicon glyphicon-education"></span>
-                    Documentation</a></li>
-                <li><a id="44z57oqk5edyy" href="/javascript.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                        id="r5rqyvsbogfu6"
-                                                                                        class="js5-icon glyphicon glyphicon-knight"></span>
-                    JavaScript</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<main>
-    <div class="header">
-        <div class="container"><h1>Getting Started</h1>
-            <p class="lead">Get up to speed with a few steps to create your web application</p></div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9" role="main">
-                <div class="doc-section"><h1 id="requirements" class="page-header"> Requirements </h1>
-                    <p> Honestly, there is no much to install. You only need to have the Java(from 1.7) Virtual Machine
-                        and Maven(from 3.1.0) tool installed in your computer. If you already have those installed you
-                        can skip to <a id="nlzoknnogxn5w" href="/starting.html#firstapp" class="btn btn-link link-plain">Create
-                            your first application</a>. </p>
-                    <h3 id="java" class="doc-lead"> Installing Java </h3>
-                    <p> JSmart uses the Java as programming language and the Java Virtual Machine to run your
-                        applications. You have to make sure that you are running at least Java in version 1.7. </p>
-                    <p> You can check that by executing the following command in your console: </p>
-                    <div class="doc-highlight-only">
-                        <pre class="prettyprint prettyprinted"><span class="pln">java </span><span
-                                class="pun">-</span><span class="pln">version</span></pre>
-                    </div>
-                    <p> It should print something like the following in your console: </p>
-                    <div class="doc-highlight-only"> <pre class="prettyprint prettyprinted"><span class="pln">java version </span><span
-                            class="str">"1.7.0_80"</span><span class="pln">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/jsmart/css/jsmart.min.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="JSmart Web Framework - Java Web Development Framework">
+        <meta property="og:description" content="JSmart is a powerful, open source, web framework for the Java platform aimed to improve developers productivity and experience thanks to easy and centralized way to setup the application, variety of web components integrated with Bootstrap v3.3.5, action based programming, asynchronous programming and integration with Spring 4 and EJB 3.">
+        <meta property="og:url" content="http://www.jsmartframework.com">
+        <meta property="og:image" content="http://www.jsmartframework.com/logo.png">
+        <title>JSmart Web Framework - Java Web Development Framework</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/prettify/prettify.css">
+        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-69775107-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body data-spy="scroll" data-target="#menu-scroll-spy" onload="prettyPrint();">
+        <nav class="main-nav navbar navbar-default">
+            <div class="container container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span></button>
+                    <a id="5hroeocx2pqnu" href="/index.html" class="btn btn-link navbar-brand">JSmart Web Framework</a>
+                </div>
+                <div id="navbar-content" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a id="ozvbdgbxvnrro" href="/starting.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="vhoraq3ih2sko"
+                            class="js5-icon glyphicon glyphicon-pushpin"></span>
+                            Getting Started</a>
+                        </li>
+                        <li><a id="p4virx7udcs2m" href="/components.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="b3qnmv6vgn4ny"
+                            class="js5-icon glyphicon glyphicon-king"></span>
+                            Components</a>
+                        </li>
+                        <li><a id="bxqogp4ku2cfs" href="/download.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="jdv27ayq43do4"
+                            class="js5-icon glyphicon glyphicon-save"></span>
+                            Download</a>
+                        </li>
+                        <li><a id="6e3fkf5d5clkg" href="/examples.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="n4polrii465ha"
+                            class="js5-icon glyphicon glyphicon-flash"></span>
+                            Examples</a>
+                        </li>
+                        <li><a id="bsxsmjjt76xhg" href="/documentation.html" class="btn btn-link"><span side="left"
+                            aria-hidden="true"
+                            id="tck3bkunfxhvu"
+                            class="js5-icon glyphicon glyphicon-education"></span>
+                            Documentation</a>
+                        </li>
+                        <li><a id="44z57oqk5edyy" href="/javascript.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="r5rqyvsbogfu6"
+                            class="js5-icon glyphicon glyphicon-knight"></span>
+                            JavaScript</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="header">
+                <div class="container">
+                    <h1>Getting Started</h1>
+                    <p class="lead">Get up to speed with a few steps to create your web application</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9" role="main">
+                        <div class="doc-section">
+                            <h1 id="requirements" class="page-header"> Requirements </h1>
+                            <p> Honestly, there is no much to install. You only need to have the Java(from 1.7) Virtual Machine
+                                and Maven(from 3.1.0) tool installed in your computer. If you already have those installed you
+                                can skip to <a id="nlzoknnogxn5w" href="/starting.html#firstapp" class="btn btn-link link-plain">Create
+                                your first application</a>. 
+                            </p>
+                            <h3 id="java" class="doc-lead"> Installing Java </h3>
+                            <p> JSmart uses the Java as programming language and the Java Virtual Machine to run your
+                                applications. You have to make sure that you are running at least Java in version 1.7. 
+                            </p>
+                            <p> You can check that by executing the following command in your console: </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">java </span><span
+                                    class="pun">-</span><span class="pln">version</span></pre>
+                            </div>
+                            <p> It should print something like the following in your console: </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">java version </span><span
+                                    class="str">"1.7.0_80"</span><span class="pln">
 </span><span class="typ">Java</span><span class="pun">(</span><span class="pln">TM</span><span class="pun">)</span><span
-                            class="pln"> SE </span><span class="typ">Runtime</span><span class="pln"> </span><span
-                            class="typ">Environment</span><span class="pln"> </span><span class="pun">(</span><span
-                            class="pln">build </span><span class="lit">1.7</span><span class="pun">.</span><span
-                            class="lit">0_80</span><span class="pun">-</span><span class="pln">b15</span><span
-                            class="pun">)</span><span class="pln">
+                                    class="pln"> SE </span><span class="typ">Runtime</span><span class="pln"> </span><span
+                                    class="typ">Environment</span><span class="pln"> </span><span class="pun">(</span><span
+                                    class="pln">build </span><span class="lit">1.7</span><span class="pun">.</span><span
+                                    class="lit">0_80</span><span class="pun">-</span><span class="pln">b15</span><span
+                                    class="pun">)</span><span class="pln">
 </span><span class="typ">Java</span><span class="pln"> </span><span class="typ">HotSpot</span><span class="pun">(</span><span
-                            class="pln">TM</span><span class="pun">)</span><span class="pln"> </span><span class="lit">64</span><span
-                            class="pun">-</span><span class="typ">Bit</span><span class="pln"> </span><span class="typ">Server</span><span
-                            class="pln"> VM </span><span class="pun">(</span><span class="pln">build </span><span
-                            class="lit">24.80</span><span class="pun">-</span><span class="pln">b11</span><span
-                            class="pun">,</span><span class="pln"> mixed mode</span><span class="pun">)</span></pre>
-                    </div>
-                    <p> As you can see my machine is running Java 1.7.0_80. If you are using an older version please
-                        install the latest Java version from: <a id="mlekvfnpv2d22"
-                                                                 href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"
-                                                                 class="btn btn-link link-plain" target="_blank">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>
-                    </p>
-                    <h3 id="maven" class="doc-lead"> Installing Maven </h3>
-                    <p> JSmart uses a Maven tool to build and create new projects. Maven is used by the majority of Java
-                        based projects, and most likely you already have it installed on your machine. You can check
-                        that by executing the following command in your console: </p>
-                    <p></p>
-                    <div class="doc-highlight-only">
-                        <pre class="prettyprint prettyprinted"><span class="pln">mvn </span><span
-                                class="pun">-</span><span class="pln">version</span></pre>
-                    </div>
-                    <p> This will print out the version of your Maven installation. In my case: </p>
-                    <div class="doc-highlight-only"> <pre class="prettyprint prettyprinted"><span
-                            class="typ">Apache</span><span class="pln"> </span><span class="typ">Maven</span><span
-                            class="pln"> </span><span class="lit">3.1</span><span class="pun">.</span><span class="lit">0</span><span
-                            class="pln"> </span><span class="pun">(</span><span class="lit">893ca28a1da9d5f51ac03827af98bb730128f9f2</span><span
-                            class="pun">;</span><span class="pln"> </span><span class="lit">2013</span><span
-                            class="pun">-</span><span class="lit">06</span><span class="pun">-</span><span class="lit">27</span><span
-                            class="pln"> </span><span class="lit">23</span><span class="pun">:</span><span class="lit">15</span><span
-                            class="pun">:</span><span class="lit">32</span><span class="pun">-</span><span class="lit">0300</span><span
-                            class="pun">)</span><span class="pln">
+                                    class="pln">TM</span><span class="pun">)</span><span class="pln"> </span><span class="lit">64</span><span
+                                    class="pun">-</span><span class="typ">Bit</span><span class="pln"> </span><span class="typ">Server</span><span
+                                    class="pln"> VM </span><span class="pun">(</span><span class="pln">build </span><span
+                                    class="lit">24.80</span><span class="pun">-</span><span class="pln">b11</span><span
+                                    class="pun">,</span><span class="pln"> mixed mode</span><span class="pun">)</span></pre>
+                            </div>
+                            <p> As you can see my machine is running Java 1.7.0_80. If you are using an older version please
+                                install the latest Java version from: <a id="mlekvfnpv2d22"
+                                    href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"
+                                    class="btn btn-link link-plain" target="_blank">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>
+                            </p>
+                            <h3 id="maven" class="doc-lead"> Installing Maven </h3>
+                            <p> JSmart uses a Maven tool to build and create new projects. Maven is used by the majority of Java
+                                based projects, and most likely you already have it installed on your machine. You can check
+                                that by executing the following command in your console: 
+                            </p>
+                            <p></p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">mvn </span><span
+                                    class="pun">-</span><span class="pln">version</span></pre>
+                            </div>
+                            <p> This will print out the version of your Maven installation. In my case: </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span
+                                    class="typ">Apache</span><span class="pln"> </span><span class="typ">Maven</span><span
+                                    class="pln"> </span><span class="lit">3.1</span><span class="pun">.</span><span class="lit">0</span><span
+                                    class="pln"> </span><span class="pun">(</span><span class="lit">893ca28a1da9d5f51ac03827af98bb730128f9f2</span><span
+                                    class="pun">;</span><span class="pln"> </span><span class="lit">2013</span><span
+                                    class="pun">-</span><span class="lit">06</span><span class="pun">-</span><span class="lit">27</span><span
+                                    class="pln"> </span><span class="lit">23</span><span class="pun">:</span><span class="lit">15</span><span
+                                    class="pun">:</span><span class="lit">32</span><span class="pun">-</span><span class="lit">0300</span><span
+                                    class="pun">)</span><span class="pln">
 </span><span class="typ">Maven</span><span class="pln"> home</span><span class="pun">:</span><span
-                            class="pln"> </span><span class="str">/opt/</span><span class="pln">maven
+                                    class="pln"> </span><span class="str">/opt/</span><span class="pln">maven
 </span><span class="typ">Java</span><span class="pln"> version</span><span class="pun">:</span><span
-                            class="pln"> </span><span class="lit">1.7</span><span class="pun">.</span><span class="lit">0_80</span><span
-                            class="pun">,</span><span class="pln"> vendor</span><span class="pun">:</span><span
-                            class="pln"> </span><span class="typ">Oracle</span><span class="pln"> </span><span
-                            class="typ">Corporation</span><span class="pln">
+                                    class="pln"> </span><span class="lit">1.7</span><span class="pun">.</span><span class="lit">0_80</span><span
+                                    class="pun">,</span><span class="pln"> vendor</span><span class="pun">:</span><span
+                                    class="pln"> </span><span class="typ">Oracle</span><span class="pln"> </span><span
+                                    class="typ">Corporation</span><span class="pln">
 </span><span class="typ">Java</span><span class="pln"> home</span><span class="pun">:</span><span
-                            class="pln"> </span><span class="str">/usr/</span><span class="pln">lib</span><span
-                            class="pun">/</span><span class="pln">jvm</span><span class="pun">/</span><span class="pln">java</span><span
-                            class="pun">-</span><span class="lit">7</span><span class="pun">-</span><span class="pln">oracle</span><span
-                            class="pun">/</span><span class="pln">jre
+                                    class="pln"> </span><span class="str">/usr/</span><span class="pln">lib</span><span
+                                    class="pun">/</span><span class="pln">jvm</span><span class="pun">/</span><span class="pln">java</span><span
+                                    class="pun">-</span><span class="lit">7</span><span class="pun">-</span><span class="pln">oracle</span><span
+                                    class="pun">/</span><span class="pln">jre
 </span><span class="typ">Default</span><span class="pln"> locale</span><span class="pun">:</span><span class="pln"> en_US</span><span
-                            class="pun">,</span><span class="pln"> platform encoding</span><span
-                            class="pun">:</span><span class="pln"> UTF</span><span class="pun">-</span><span
-                            class="lit">8</span><span class="pln">
+                                    class="pun">,</span><span class="pln"> platform encoding</span><span
+                                    class="pun">:</span><span class="pln"> UTF</span><span class="pun">-</span><span
+                                    class="lit">8</span><span class="pln">
 OS name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"linux"</span><span
-                            class="pun">,</span><span class="pln"> version</span><span class="pun">:</span><span
-                            class="pln"> </span><span class="str">"3.13.0-52-generic"</span><span
-                            class="pun">,</span><span class="pln"> arch</span><span class="pun">:</span><span
-                            class="pln"> </span><span class="str">"amd64"</span><span class="pun">,</span><span
-                            class="pln"> family</span><span class="pun">:</span><span class="pln"> </span><span
-                            class="str">"unix"</span></pre>
-                    </div>
-                    <p> Make sure that you are using Maven 3 or greater If Maven is not available on your computer
-                        please follow the following guide to setup Maven: <a id="fwyfakrujz4yq"
-                                                                             href="http://maven.apache.org/guides/getting-started"
-                                                                             class="btn btn-link link-plain"
-                                                                             target="_blank">http://maven.apache.org/guides/getting-started</a>
-                    </p></div>
-                <div class="doc-section"><h1 id="firstapp" class="page-header"> Create your first application </h1>
-                    <p> JSmart use a Maven feature called “archetypes“. These archetypes are blueprints that allow you
-                        generate a project from a single command. In our case we recommend the creation of JSmart base
-                        project based on our “jsmart-basic-archetype“, so you can use this project as starting point to
-                        create your own web application. Afterwards you can check the basic project structure at <a
-                                id="i3d3lu6agwbtm" href="/starting.html#structure" class="btn btn-link link-plain">What is
-                            inside the project</a>. </p>
-                    <p> Go to any folder you want the project to be created and enter the following command: </p>
-                    <div class="doc-highlight-only">
-                        <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
-                                class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
-                                class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
-                                class="pln">com</span><span class="pun">.</span><span
-                                class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
-                                class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
-                                class="pln">basic</span><span class="pun">-</span><span
-                                class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
-                                class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
-                                class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
-                                class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
-                                class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
-                    </div>
-                    <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
-                        project. </p>
-                    <p> Afterwards you can access your project named via previously input ${artifactId} and start the
-                        web application using embedded Jetty 9. Check the following commands: </p>
-                    <div class="doc-highlight-only"> <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
-                            class="str">&lt;you_artifact_id&gt;</span><span class="pln">
+                                    class="pun">,</span><span class="pln"> version</span><span class="pun">:</span><span
+                                    class="pln"> </span><span class="str">"3.13.0-52-generic"</span><span
+                                    class="pun">,</span><span class="pln"> arch</span><span class="pun">:</span><span
+                                    class="pln"> </span><span class="str">"amd64"</span><span class="pun">,</span><span
+                                    class="pln"> family</span><span class="pun">:</span><span class="pln"> </span><span
+                                    class="str">"unix"</span></pre>
+                            </div>
+                            <p> Make sure that you are using Maven 3 or greater If Maven is not available on your computer
+                                please follow the following guide to setup Maven: <a id="fwyfakrujz4yq"
+                                    href="http://maven.apache.org/guides/getting-started"
+                                    class="btn btn-link link-plain"
+                                    target="_blank">http://maven.apache.org/guides/getting-started</a>
+                            </p>
+                        </div>
+                        <div class="doc-section">
+                            <h1 id="firstapp" class="page-header"> Create your first application </h1>
+                            <p> JSmart use a Maven feature called “archetypes“. These archetypes are blueprints that allow you
+                                generate a project from a single command. In our case we recommend the creation of JSmart base
+                                project based on our “jsmart-basic-archetype“, so you can use this project as starting point to
+                                create your own web application. Afterwards you can check the basic project structure at <a
+                                    id="i3d3lu6agwbtm" href="/starting.html#structure" class="btn btn-link link-plain">What is
+                                inside the project</a>. 
+                            </p>
+                            <p> Go to any folder you want the project to be created and enter the following command: </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
+                                    class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
+                                    class="pln">com</span><span class="pun">.</span><span
+                                    class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
+                                    class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
+                                    class="pln">basic</span><span class="pun">-</span><span
+                                    class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
+                                    class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
+                                    class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
+                                    class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
+                            </div>
+                            <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
+                                project. 
+                            </p>
+                            <p> Afterwards you can access your project named via previously input ${artifactId} and start the
+                                web application using embedded Jetty 9. Check the following commands: 
+                            </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
+                                    class="str">&lt;you_artifact_id&gt;</span><span class="pln">
 mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
-                    </div>
-                    <p> This will start the web container with the web application. To access it, go to browser and
-                        enter the URL <a id="nqnngxy6dav4e" href="http://localhost:8080" class="btn btn-link link-plain"
-                                         target="_blank">http://localhost:8080</a>. </p>
-                    <p> For more examples using JSmart, take a look at the <a id="53yjvc7z7wxcw" href="/examples.html"
-                                                                              class="btn btn-link link-plain">Examples</a>
-                        page. </p></div>
-                <div class="doc-section"><h1 id="structure" class="page-header"> What is inside the project </h1>
-                    <p> JSmart does a lot of things via annotation and the project structure must follow some web
-                        project patterns. </p>
-                    <p> For instance the .jsp files must be placed inside /webapp/WEB-INF folder, so the routes mapped
-                        will use the same name as the .jsp file but it could be overwritten via webConfig.xml file. The
-                        <a id="nl23rderno6cu" href="/documentation.html" class="btn btn-link link-plain">Documentation</a>
-                        explains in depth how to setup your application all the things you can do with JSmart. </p>
-                    <h3 id="basic" class="doc-lead"> Basic Project </h3>
-                    <p> The content of the basic project created via archetype is exploded below: </p>
-                    <div class="doc-highlight-only"> <pre class="prettyprint  prettyprinted"><span
-                            class="pun">|</span><span class="pln">__pom</span><span class="pun">.</span><span
-                            class="pln">xml                       </span><span class="com">// Maven project setup including JSmart dependency</span><span
-                            class="pln">
+                            </div>
+                            <p> This will start the web container with the web application. To access it, go to browser and
+                                enter the URL <a id="nqnngxy6dav4e" href="http://localhost:8080" class="btn btn-link link-plain"
+                                    target="_blank">http://localhost:8080</a>. 
+                            </p>
+                            <p> For more examples using JSmart, take a look at the <a id="53yjvc7z7wxcw" href="/examples.html"
+                                class="btn btn-link link-plain">Examples</a>
+                                page. 
+                            </p>
+                        </div>
+                        <div class="doc-section">
+                            <h1 id="structure" class="page-header"> What is inside the project </h1>
+                            <p> JSmart does a lot of things via annotation and the project structure must follow some web
+                                project patterns. 
+                            </p>
+                            <p> For instance the .jsp files must be placed inside /webapp/WEB-INF folder, so the routes mapped
+                                will use the same name as the .jsp file but it could be overwritten via webConfig.xml file. The
+                                <a id="nl23rderno6cu" href="/documentation.html" class="btn btn-link link-plain">Documentation</a>
+                                explains in depth how to setup your application all the things you can do with JSmart. 
+                            </p>
+                            <h3 id="basic" class="doc-lead"> Basic Project </h3>
+                            <p> The content of the basic project created via archetype is exploded below: </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint  prettyprinted"><span
+                                    class="pun">|</span><span class="pln">__pom</span><span class="pun">.</span><span
+                                    class="pln">xml                       </span><span class="com">// Maven project setup including JSmart dependency</span><span
+                                    class="pln">
 </span><span class="pun">|</span><span class="pln">__src
    </span><span class="pun">|</span><span class="pln">__main
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span class="pln">__java
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span
-                            class="pln">  </span><span class="pun">|</span><span class="pln">__$</span><span
-                            class="pun">{</span><span class="kwd">package</span><span class="pun">}</span><span
-                            class="pln">           </span><span class="com">// Package with same name of ${package} during archetype creation</span><span
-                            class="pln">
+                                    class="pln">  </span><span class="pun">|</span><span class="pln">__$</span><span
+                                    class="pun">{</span><span class="kwd">package</span><span class="pun">}</span><span
+                                    class="pln">           </span><span class="com">// Package with same name of ${package} during archetype creation</span><span
+                                    class="pln">
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span
-                            class="pln">     </span><span class="pun">|</span><span class="pln">
+                                    class="pln">     </span><span class="pun">|</span><span class="pln">
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span
-                            class="pln">     </span><span class="pun">|</span><span class="pln">__bean
+                                    class="pln">     </span><span class="pun">|</span><span class="pln">__bean
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span
-                            class="pln">     </span><span class="pun">|</span><span class="pln">  </span><span
-                            class="pun">|</span><span class="pln">__HomeBean</span><span class="pun">.</span><span
-                            class="pln">java  </span><span class="com">// WebBean mapped on JSP to provide server side action and values for pages</span><span
-                            class="pln">
+                                    class="pln">     </span><span class="pun">|</span><span class="pln">  </span><span
+                                    class="pun">|</span><span class="pln">__HomeBean</span><span class="pun">.</span><span
+                                    class="pln">java  </span><span class="com">// WebBean mapped on JSP to provide server side action and values for pages</span><span
+                                    class="pln">
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span
-                            class="pln">     </span><span class="pun">|</span><span class="pln">
+                                    class="pln">     </span><span class="pun">|</span><span class="pln">
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span
-                            class="pln">     </span><span class="pun">|</span><span class="pln">__service
+                                    class="pln">     </span><span class="pun">|</span><span class="pln">__service
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span
-                            class="pln">        </span><span class="pun">|</span><span
-                            class="pln">__SpringService</span><span class="pun">.</span><span
-                            class="pln">java </span><span
-                            class="com">// Spring service to the injected on WebBeans</span><span class="pln">
+                                    class="pln">        </span><span class="pun">|</span><span
+                                    class="pln">__SpringService</span><span class="pun">.</span><span
+                                    class="pln">java </span><span
+                                    class="com">// Spring service to the injected on WebBeans</span><span class="pln">
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span class="pln">
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span class="pln">__resources
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span
-                            class="pln">  </span><span class="pun">|</span><span class="pln">__texts</span><span
-                            class="pun">.</span><span class="pln">properties     </span><span class="com">// Text locale based messages to provide texts for JSP and beans</span><span
-                            class="pln">
+                                    class="pln">  </span><span class="pun">|</span><span class="pln">__texts</span><span
+                                    class="pun">.</span><span class="pln">properties     </span><span class="com">// Text locale based messages to provide texts for JSP and beans</span><span
+                                    class="pln">
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span class="pln">
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span class="pln">__webapp
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span
-                            class="pln">  </span><span class="pun">|</span><span class="pln">__WEB</span><span
-                            class="pun">-</span><span class="pln">INF
+                                    class="pln">  </span><span class="pun">|</span><span class="pln">__WEB</span><span
+                                    class="pun">-</span><span class="pln">INF
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span
-                            class="pln">     </span><span class="pun">|</span><span class="pln">__webConfig</span><span
-                            class="pun">.</span><span class="pln">xml     </span><span class="com">// Xml configuration to specify welcome-url, pattern-url, package-scan</span><span
-                            class="pln">
+                                    class="pln">     </span><span class="pun">|</span><span class="pln">__webConfig</span><span
+                                    class="pun">.</span><span class="pln">xml     </span><span class="com">// Xml configuration to specify welcome-url, pattern-url, package-scan</span><span
+                                    class="pln">
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span
-                            class="pln">     </span><span class="pun">|</span><span class="pln">__home</span><span
-                            class="pun">.</span><span class="pln">jsp          </span><span class="com">// JSP page for /home HTML containing map for HomeBean actions and values</span><span
-                            class="pln">
+                                    class="pln">     </span><span class="pun">|</span><span class="pln">__home</span><span
+                                    class="pun">.</span><span class="pln">jsp          </span><span class="com">// JSP page for /home HTML containing map for HomeBean actions and values</span><span
+                                    class="pln">
    </span><span class="pun">|</span><span class="pln">  </span><span class="pun">|</span><span class="pln">
    </span><span class="pun">|</span><span class="pln">__test
       </span><span class="pun">|</span><span class="pln">__java
          </span><span class="pun">|</span><span class="pln">__                     </span><span class="com">// Your tests go here</span></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu-scroll-spy" class="col-md-3" role="complementary">
+                        <ul id="doc-side-nav-id" class="nav doc-sidenav affix-top" data-spy="affix" data-offset-top="255">
+                            <li class="active">
+                                <a href="#requirements">Requirements</a>
+                                <ul class="nav">
+                                    <li><a href="#java">Installing Java</a></li>
+                                    <li><a href="#maven">Installing Maven</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#firstapp">Create your first application</a></li>
+                            <li>
+                                <a href="#structure">What is inside the project</a>
+                                <ul class="nav">
+                                    <li><a href="#basic">Basic project</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div id="menu-scroll-spy" class="col-md-3" role="complementary">
-                <ul id="doc-side-nav-id" class="nav doc-sidenav affix-top" data-spy="affix" data-offset-top="255">
-                    <li class="active"><a href="#requirements">Requirements</a>
-                        <ul class="nav">
-                            <li><a href="#java">Installing Java</a></li>
-                            <li><a href="#maven">Installing Maven</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#firstapp">Create your first application</a></li>
-                    <li><a href="#structure">What is inside the project</a>
-                        <ul class="nav">
-                            <li><a href="#basic">Basic project</a></li>
-                        </ul>
-                    </li>
-                </ul>
+        </main>
+        <footer>
+            <div class="container">
+                <p> Code licensed under <a id="lg4kbbhfnnc5k"
+                    href="http://www.gnu.org/licenses/lgpl-3.0.html"
+                    class="btn btn-link link-plain" target="_blank"> GNU Lesser
+                    General Public License, Version 3.0 </a> <br> Created by <a id="ebpolh2trd57u"
+                        href="https://br.linkedin.com/in/jefalbino"
+                        class="btn btn-link link-plain" target="_blank">
+                    Jeferson Albino </a> <br> Clone the JSmart Web Framework on <a id="l6tmx4isbattm"
+                        href="https://github.com/jefalbino/jsmart-web"
+                        class="btn btn-link link-plain" target="_blank">
+                    GitHub </a>
+                </p>
             </div>
-        </div>
-    </div>
-</main>
-<footer>
-    <div class="container"><p> Code licensed under <a id="lg4kbbhfnnc5k"
-                                                      href="http://www.gnu.org/licenses/lgpl-3.0.html"
-                                                      class="btn btn-link link-plain" target="_blank"> GNU Lesser
-        General Public License, Version 3.0 </a> <br> Created by <a id="ebpolh2trd57u"
-                                                                    href="https://br.linkedin.com/in/jefalbino"
-                                                                    class="btn btn-link link-plain" target="_blank">
-        Jeferson Albino </a> <br> Clone the JSmart Web Framework on <a id="l6tmx4isbattm"
-                                                                       href="https://github.com/jefalbino/jsmart-web"
-                                                                       class="btn btn-link link-plain" target="_blank">
-        GitHub </a></p></div>
-</footer>
-<script type="text/javascript" src="/jsmart/js/jsmart.min.js"></script>
-<script type="text/javascript" src="/prettify/prettify.js"></script>
-</body>
+        </footer>
+        <script type="text/javascript" src="/jsmart/js/jsmart.min.js"></script>
+        <script type="text/javascript" src="/prettify/prettify.js"></script>
+    </body>
 </html>

@@ -1,106 +1,119 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html prefix="og: http://ogp.me/ns#">
-<head>
-    <link rel="stylesheet" type="text/css" href="/jsmart/css/jsmart.min.css">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="JSmart Web Framework - Java Web Development Framework">
-    <meta property="og:description" content="JSmart is a powerful, open source, web framework for the Java platform aimed to improve developers productivity and experience thanks to easy and centralized way to setup the application, variety of web components integrated with Bootstrap v3.3.5, action based programming, asynchronous programming and integration with Spring 4 and EJB 3.">
-    <meta property="og:url" content="http://www.jsmartframework.com">
-    <meta property="og:image" content="http://www.jsmartframework.com/logo.png">
-    <title>JSmart Web Framework - Java Web Development Framework</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/prettify/prettify.css">
-    <script async="" src="//www.google-analytics.com/analytics.js"></script>
-    <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-69775107-1', 'auto');
-          ga('send', 'pageview');
-    </script>
-</head>
-<body data-spy="scroll" data-target="#menu-scroll-spy" onload="prettyPrint();">
-<nav class="main-nav navbar navbar-default">
-    <div class="container container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content">
-                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
-                    class="icon-bar"></span> <span class="icon-bar"></span></button>
-            <a id="srjdrqvfb656m" href="/index.html" class="btn btn-link navbar-brand">JSmart Web Framework</a></div>
-        <div id="navbar-content" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a id="k3cmm5n3b26ii" href="/starting.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                      id="isg4xwgxjalbe"
-                                                                                      class="js5-icon glyphicon glyphicon-pushpin"></span>
-                    Getting Started</a></li>
-                <li><a id="f33pygte7ynzk" href="/components.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                        id="g5wamscht7btm"
-                                                                                        class="js5-icon glyphicon glyphicon-king"></span>
-                    Components</a></li>
-                <li><a id="aakyuy4i4s4qs" href="/download.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                      id="x4uiy4plvhl64"
-                                                                                      class="js5-icon glyphicon glyphicon-save"></span>
-                    Download</a></li>
-                <li><a id="wb2fck4hbhacw" href="/examples.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                      id="zy3kd4ft6qsrs"
-                                                                                      class="js5-icon glyphicon glyphicon-flash"></span>
-                    Examples</a></li>
-                <li><a id="xlvbi5vjdhcw6" href="/documentation.html" class="btn btn-link"><span side="left"
-                                                                                           aria-hidden="true"
-                                                                                           id="py3rq32m3nbec"
-                                                                                           class="js5-icon glyphicon glyphicon-education"></span>
-                    Documentation</a></li>
-                <li><a id="mk3ystpv3yyc6" href="/javascript.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                        id="5mcrfrhoopg5k"
-                                                                                        class="js5-icon glyphicon glyphicon-knight"></span>
-                    JavaScript</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<main>
-    <div class="header">
-        <div class="container"><h1>JavaScript</h1>
-            <p class="lead"> Useful JavaScript API to help with components management on client side! </p></div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9" role="main">
-                <div class="doc-section"><h1 id="functions" class="page-header"> JSmart functions </h1>
-                    <p> JSmart integrates with JQuery v1.11.2 and Bootstrap v3.3.5 JavaScript and besides that we
-                        provide useful JavaScript functions to help working with some complex components on client side.
-                        In case you want to work with other basic components interaction we advice you to use JQuery or
-                        Bootstrap capabilities directly. </p>
-                    <p> To use JSmart functions you can call it via reserved object referenced as <code>JSmart</code> on
-                        your script. For JQuery capabilities please have a look at <a target="_blank"
-                                                                                      href="https://jquery.com/">JQuery
-                            page</a> or for Bootstrap JavaScript look at <a target="_blank"
-                                                                            href="http://getbootstrap.com/javascript/">Bootstrap
-                            page</a>. </p>
-                    <p> Please have a look on the following available functions. </p>
-                    <div class="doc-highlight-only"> <pre class="prettyprint  prettyprinted"><span class="com">/*!
+    <head>
+        <link rel="stylesheet" type="text/css" href="/jsmart/css/jsmart.min.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="JSmart Web Framework - Java Web Development Framework">
+        <meta property="og:description" content="JSmart is a powerful, open source, web framework for the Java platform aimed to improve developers productivity and experience thanks to easy and centralized way to setup the application, variety of web components integrated with Bootstrap v3.3.5, action based programming, asynchronous programming and integration with Spring 4 and EJB 3.">
+        <meta property="og:url" content="http://www.jsmartframework.com">
+        <meta property="og:image" content="http://www.jsmartframework.com/logo.png">
+        <title>JSmart Web Framework - Java Web Development Framework</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/prettify/prettify.css">
+        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-69775107-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body data-spy="scroll" data-target="#menu-scroll-spy" onload="prettyPrint();">
+        <nav class="main-nav navbar navbar-default">
+            <div class="container container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span></button>
+                    <a id="srjdrqvfb656m" href="/index.html" class="btn btn-link navbar-brand">JSmart Web Framework</a>
+                </div>
+                <div id="navbar-content" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a id="k3cmm5n3b26ii" href="/starting.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="isg4xwgxjalbe"
+                            class="js5-icon glyphicon glyphicon-pushpin"></span>
+                            Getting Started</a>
+                        </li>
+                        <li><a id="f33pygte7ynzk" href="/components.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="g5wamscht7btm"
+                            class="js5-icon glyphicon glyphicon-king"></span>
+                            Components</a>
+                        </li>
+                        <li><a id="aakyuy4i4s4qs" href="/download.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="x4uiy4plvhl64"
+                            class="js5-icon glyphicon glyphicon-save"></span>
+                            Download</a>
+                        </li>
+                        <li><a id="wb2fck4hbhacw" href="/examples.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="zy3kd4ft6qsrs"
+                            class="js5-icon glyphicon glyphicon-flash"></span>
+                            Examples</a>
+                        </li>
+                        <li><a id="xlvbi5vjdhcw6" href="/documentation.html" class="btn btn-link"><span side="left"
+                            aria-hidden="true"
+                            id="py3rq32m3nbec"
+                            class="js5-icon glyphicon glyphicon-education"></span>
+                            Documentation</a>
+                        </li>
+                        <li><a id="mk3ystpv3yyc6" href="/javascript.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="5mcrfrhoopg5k"
+                            class="js5-icon glyphicon glyphicon-knight"></span>
+                            JavaScript</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="header">
+                <div class="container">
+                    <h1>JavaScript</h1>
+                    <p class="lead"> Useful JavaScript API to help with components management on client side! </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9" role="main">
+                        <div class="doc-section">
+                            <h1 id="functions" class="page-header"> JSmart functions </h1>
+                            <p> JSmart integrates with JQuery v1.11.2 and Bootstrap v3.3.5 JavaScript and besides that we
+                                provide useful JavaScript functions to help working with some complex components on client side.
+                                In case you want to work with other basic components interaction we advice you to use JQuery or
+                                Bootstrap capabilities directly. 
+                            </p>
+                            <p> To use JSmart functions you can call it via reserved object referenced as <code>JSmart</code> on
+                                your script. For JQuery capabilities please have a look at <a target="_blank"
+                                    href="https://jquery.com/">JQuery
+                                page</a> or for Bootstrap JavaScript look at <a target="_blank"
+                                    href="http://getbootstrap.com/javascript/">Bootstrap
+                                page</a>. 
+                            </p>
+                            <p> Please have a look on the following available functions. </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint  prettyprinted"><span class="com">/*!
  * In case you implemented WebSecurity you can retrieve the CSRF token name generated to
  * current page, please use the following function.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">getCsrfName</span><span class="pun">();</span><span
-                            class="pln">
+                                    class="pln">
 
 </span><span class="com">/*!
  * In case you implemented WebSecurity you can retrieve the CSRF token value generated
  * to current page, please use the following function.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">getCsrfToken</span><span class="pun">();</span><span
-                            class="pln">
+                                    class="pln">
 
 </span><span class="com">/*!
  * In case you want to set the CSRF token name and value in your Ajax request as headers
  * please use the following function.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">setCsrfHeader</span><span class="pun">(</span><span
-                            class="pln">xhr</span><span class="pun">);</span><span class="pln">
+                                    class="pln">xhr</span><span class="pun">);</span><span class="pln">
 
 </span><span class="com">/*!
  * Validate function is useful for validating components such as form, input, textarea, select,
@@ -111,16 +124,16 @@
  * Please refer to </span><a href="/components.html"><span class="com">Components</span></a><span class="com"> page for more details.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">validate</span><span
-                            class="pun">(</span><span class="str">'component-id'</span><span class="pun">);</span><span
-                            class="pln">
+                                    class="pun">(</span><span class="str">'component-id'</span><span class="pun">);</span><span
+                                    class="pln">
 
 </span><span class="com">/*!
  * Abort request function is available for stopping Ajax request initiated by some component such
  * as button, link or any component containing the ajax tag as inner tag.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">abortRequest</span><span
-                            class="pun">(</span><span class="str">'component-id'</span><span class="pun">);</span><span
-                            class="pln">
+                                    class="pun">(</span><span class="str">'component-id'</span><span class="pun">);</span><span
+                                    class="pln">
 
 </span><span class="com">/*!
  * Create row function is meant to be used along with table or list components which must contain
@@ -138,10 +151,10 @@
  * track of it when calling "getRow" function.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">createRow</span><span
-                            class="pun">(</span><span class="str">'list-or-table-id'</span><span
-                            class="pun">,</span><span class="pln"> </span><span class="kwd">template</span><span
-                            class="pun">-</span><span class="pln">index</span><span class="pun">);</span><span
-                            class="pln">
+                                    class="pun">(</span><span class="str">'list-or-table-id'</span><span
+                                    class="pun">,</span><span class="pln"> </span><span class="kwd">template</span><span
+                                    class="pun">-</span><span class="pln">index</span><span class="pun">);</span><span
+                                    class="pln">
 
 </span><span class="com">/*!
  * As createRow function, this function was created to work along with table or list components
@@ -152,9 +165,9 @@
  * the list or table in which the row was appended.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">getRow</span><span
-                            class="pun">(</span><span class="str">'list-or-table-id'</span><span
-                            class="pun">,</span><span class="pln"> </span><span
-                            class="str">'my-attr="my-key"'</span><span class="pun">);</span><span class="pln">
+                                    class="pun">(</span><span class="str">'list-or-table-id'</span><span
+                                    class="pun">,</span><span class="pln"> </span><span
+                                    class="str">'my-attr="my-key"'</span><span class="pun">);</span><span class="pln">
 
 </span><span class="com">/*!
  * Also this function was created to work along with table or list components which must contain
@@ -164,10 +177,10 @@
  * over all rows.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">getAllRows</span><span
-                            class="pun">(</span><span class="str">'list-or-table-id'</span><span
-                            class="pun">,</span><span class="pln"> </span><span class="kwd">template</span><span
-                            class="pun">-</span><span class="pln">index</span><span class="pun">);</span><span
-                            class="pln">
+                                    class="pun">(</span><span class="str">'list-or-table-id'</span><span
+                                    class="pun">,</span><span class="pln"> </span><span class="kwd">template</span><span
+                                    class="pun">-</span><span class="pln">index</span><span class="pun">);</span><span
+                                    class="pln">
 
 </span><span class="com">/*!
  * The removeRow function is very similar as the function getRow so it was created to work along
@@ -178,130 +191,130 @@
  * row object while creating it.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">removeRow</span><span
-                            class="pun">(</span><span class="str">'list-or-table-id'</span><span
-                            class="pun">,</span><span class="pln"> </span><span
-                            class="str">'my-attr="my-key"'</span><span class="pun">);</span><span class="pln">
+                                    class="pun">(</span><span class="str">'list-or-table-id'</span><span
+                                    class="pun">,</span><span class="pln"> </span><span
+                                    class="str">'my-attr="my-key"'</span><span class="pun">);</span><span class="pln">
 
 </span><span class="com">/*!
  * Clear function was created to work on table or list components in case you need to clear its
  * content and preserve the templates, empty content and loading behavior.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">clear</span><span class="pun">(</span><span
-                            class="str">'list-or-table-id'</span><span class="pun">);</span><span class="pln">
+                                    class="str">'list-or-table-id'</span><span class="pun">);</span><span class="pln">
 
 </span><span class="com">/*!
  * The refresh function was created to work on table components in case you need to resize it
  * due to layout changes or window resize.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">refreshTable</span><span
-                            class="pun">(</span><span class="str">'table-id'</span><span class="pun">);</span><span
-                            class="pln">
+                                    class="pun">(</span><span class="str">'table-id'</span><span class="pun">);</span><span
+                                    class="pln">
 
 </span><span class="com">/*!
  * Show empty function also is meant to be applied on table or list components to present empty
  * content message inside it. Note that to use this function your list or table component must
  * declare inner tag empty as inner tag. Please refer to </span><a href="/components.html"><span
-                            class="com">Components</span></a><span class="com"> page for more details.
+                                    class="com">Components</span></a><span class="com"> page for more details.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">showEmpty</span><span
-                            class="pun">(</span><span class="str">'list-or-table-id'</span><span
-                            class="pun">);</span><span class="pln">
+                                    class="pun">(</span><span class="str">'list-or-table-id'</span><span
+                                    class="pun">);</span><span class="pln">
 
 </span><span class="com">/*!
  * Hide empty function is meant to be applied on table or list components to hide empty
  * content message inside it. Note that to use this function your list or table component must
  * declare inner tag empty as inner tag. Please refer to </span><a href="/components.html"><span
-                            class="com">Components</span></a><span class="com"> page for more details.
+                                    class="com">Components</span></a><span class="com"> page for more details.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">hideEmpty</span><span
-                            class="pun">(</span><span class="str">'list-or-table-id'</span><span
-                            class="pun">)</span><span class="pln">
+                                    class="pun">(</span><span class="str">'list-or-table-id'</span><span
+                                    class="pun">)</span><span class="pln">
 
 </span><span class="com">/*!
  * This function is also mean to be used along with table or list components to check if its
  * content is empty besides the present of loading, empty or template components.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">isEmpty</span><span
-                            class="pun">(</span><span class="str">'list-or-table-id'</span><span
-                            class="pun">);</span><span class="pln">
+                                    class="pun">(</span><span class="str">'list-or-table-id'</span><span
+                                    class="pun">);</span><span class="pln">
 
 </span><span class="com">/*!
  * This function is useful in case you want to present the load component you have placed in
  * your page. This load component can be placed inside button, link, table, list or any other
  * supported component even outside them. Please refer to </span><a href="/components.html"><span
-                            class="com">Components</span></a><span class="com"> page for more details.
+                                    class="com">Components</span></a><span class="com"> page for more details.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">showLoad</span><span
-                            class="pun">(</span><span class="str">'load-id'</span><span class="pun">);</span><span
-                            class="pln">
+                                    class="pun">(</span><span class="str">'load-id'</span><span class="pun">);</span><span
+                                    class="pln">
 
 </span><span class="com">/*!
  * This function is useful in case you want to hide the load component you have placed in
  * your page. This load component can be placed inside button, link, table, list or any other
  * supported component even outside them. Please refer to </span><a href="/components.html"><span
-                            class="com">Components</span></a><span class="com"> page for more details.
+                                    class="com">Components</span></a><span class="com"> page for more details.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">hideLoad</span><span
-                            class="pun">(</span><span class="str">'load-id'</span><span class="pun">);</span><span
-                            class="pln">
+                                    class="pun">(</span><span class="str">'load-id'</span><span class="pun">);</span><span
+                                    class="pln">
 
 </span><span class="com">/*!
  * Get date is useful to return a Date selected as string from date component that is integrated
  * with Bootstrap.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">getDate</span><span
-                            class="pun">(</span><span class="str">'date-id'</span><span class="pun">);</span><span
-                            class="pln">
+                                    class="pun">(</span><span class="str">'date-id'</span><span class="pun">);</span><span
+                                    class="pln">
 
 </span><span class="com">/*!
  * Set date is useful to set a Date selection on date component that is integrated with Bootstrap.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">setDate</span><span
-                            class="pun">(</span><span class="str">'date-id'</span><span class="pun">,</span><span
-                            class="pln"> time</span><span class="pun">-</span><span class="kwd">string</span><span
-                            class="pun">-</span><span class="kwd">or</span><span class="pun">-</span><span class="pln">number</span><span
-                            class="pun">);</span><span class="pln">
+                                    class="pun">(</span><span class="str">'date-id'</span><span class="pun">,</span><span
+                                    class="pln"> time</span><span class="pun">-</span><span class="kwd">string</span><span
+                                    class="pun">-</span><span class="kwd">or</span><span class="pun">-</span><span class="pln">number</span><span
+                                    class="pun">);</span><span class="pln">
 
 </span><span class="com">/*!
  * Get checkgroup is useful to return an Array of selected values from checkgroup component that
  * is integrated with Bootstrap.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">getCheckGroup</span><span class="pun">(</span><span
-                            class="str">'checkgroup-id'</span><span class="pun">);</span><span class="pln">
+                                    class="str">'checkgroup-id'</span><span class="pun">);</span><span class="pln">
 
 </span><span class="com">/*!
  * Set checkgroup is useful to set an Array as selected values on checkgroup component that is
  * integrated with Bootstrap.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">setCheckGroup</span><span class="pun">(</span><span
-                            class="str">'checkgroup-id'</span><span class="pun">,</span><span class="pln"> </span><span
-                            class="pun">[</span><span class="pln">array</span><span class="pun">-</span><span
-                            class="pln">of</span><span class="pun">-</span><span class="pln">values</span><span
-                            class="pun">]);</span><span class="pln">
+                                    class="str">'checkgroup-id'</span><span class="pun">,</span><span class="pln"> </span><span
+                                    class="pun">[</span><span class="pln">array</span><span class="pun">-</span><span
+                                    class="pln">of</span><span class="pun">-</span><span class="pln">values</span><span
+                                    class="pun">]);</span><span class="pln">
 
 </span><span class="com">/*!
  * Get radiogroup is useful to return the selected value from radiogroup component that is
  * integrated with Bootstrap.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">getRadioGroup</span><span class="pun">(</span><span
-                            class="str">'radiogroup-id'</span><span class="pun">);</span><span class="pln">
+                                    class="str">'radiogroup-id'</span><span class="pun">);</span><span class="pln">
 
 </span><span class="com">/*!
  * Set radiogroup is useful to set value selection on radiogroup component that is integrated
  * with Bootstrap.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">setRadioGroup</span><span class="pun">(</span><span
-                            class="str">'radiogroup-id'</span><span class="pun">,</span><span
-                            class="pln"> value</span><span class="pun">);</span><span class="pln">
+                                    class="str">'radiogroup-id'</span><span class="pun">,</span><span
+                                    class="pln"> value</span><span class="pun">);</span><span class="pln">
 
 </span><span class="com">/*!
  * Set progressbar was created to set the progress level on progressbar component by starting
  * its animation which is integrated with Bootstrap.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">setProgressBar</span><span
-                            class="pun">(</span><span class="str">'progress-bar-or-group-id'</span><span
-                            class="pun">,</span><span class="pln"> value</span><span class="pun">);</span><span
-                            class="pln">
+                                    class="pun">(</span><span class="str">'progress-bar-or-group-id'</span><span
+                                    class="pun">,</span><span class="pln"> value</span><span class="pun">);</span><span
+                                    class="pln">
 
 </span><span class="com">/*!
  * Useful function to show modal from Bootstrap by its id with additional callback functions
@@ -309,9 +322,9 @@
  * capabilities please refer to integrated Bootstrap JavaScript functions.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">showModal</span><span
-                            class="pun">(</span><span class="str">'modal-id'</span><span class="pun">,</span><span
-                            class="pln"> onShow</span><span class="pun">,</span><span class="pln"> onShown</span><span
-                            class="pun">);</span><span class="pln">
+                                    class="pun">(</span><span class="str">'modal-id'</span><span class="pun">,</span><span
+                                    class="pln"> onShow</span><span class="pun">,</span><span class="pln"> onShown</span><span
+                                    class="pun">);</span><span class="pln">
 
 </span><span class="com">/*!
  * Useful function to hide modal from Bootstrap by its id with additional callback functions
@@ -319,9 +332,9 @@
  * capabilities please refer to integrated Bootstrap JavaScript functions.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">hideModal</span><span
-                            class="pun">(</span><span class="str">'modal-id'</span><span class="pun">,</span><span
-                            class="pln"> onHide</span><span class="pun">,</span><span class="pln"> onHidden</span><span
-                            class="pun">);</span><span class="pln">
+                                    class="pun">(</span><span class="str">'modal-id'</span><span class="pun">,</span><span
+                                    class="pln"> onHide</span><span class="pun">,</span><span class="pln"> onHidden</span><span
+                                    class="pun">);</span><span class="pln">
 
 </span><span class="com">/*!
  * Useful function to present alert from Bootstrap by its id. So you can update and show alerts
@@ -329,20 +342,20 @@
  * It is also possible to specify header title and css icons such as glyphicons.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">showAlert</span><span
-                            class="pun">(</span><span class="str">'alert-id'</span><span class="pun">,</span><span
-                            class="pln"> </span><span class="str">'alert-msg'</span><span class="pun">,</span><span
-                            class="pln"> </span><span class="str">'error|info|success|warning'</span><span
-                            class="pun">,</span><span class="pln"> </span><span class="str">'head-title'</span><span
-                            class="pun">,</span><span class="pln"> </span><span class="str">'head-icon'</span><span
-                            class="pun">);</span><span class="pln">
+                                    class="pun">(</span><span class="str">'alert-id'</span><span class="pun">,</span><span
+                                    class="pln"> </span><span class="str">'alert-msg'</span><span class="pun">,</span><span
+                                    class="pln"> </span><span class="str">'error|info|success|warning'</span><span
+                                    class="pun">,</span><span class="pln"> </span><span class="str">'head-title'</span><span
+                                    class="pun">,</span><span class="pln"> </span><span class="str">'head-icon'</span><span
+                                    class="pun">);</span><span class="pln">
 
 </span><span class="com">/*!
  * Useful function to hide alert from Bootstrap by its id. Note that by hiding the alert all
  * alert content such as message, type, header and icon will be cleared.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">hideAlert</span><span
-                            class="pun">(</span><span class="str">'alert-id'</span><span class="pun">);</span><span
-                            class="pln">
+                                    class="pun">(</span><span class="str">'alert-id'</span><span class="pun">);</span><span
+                                    class="pln">
 
 </span><span class="com">/*!
  * Function to get exposed attribute value from annotated WebBean class to the current page
@@ -351,33 +364,36 @@
  * </span><a href="/documentation.html"><span class="com">Documentation</span></a><span class="com"> page.
  */</span><span class="pln">
 </span><span class="typ">JSmart</span><span class="pun">.</span><span class="pln">getExposeVar</span><span
-                            class="pun">(</span><span class="str">'attribute_name'</span><span
-                            class="pun">);</span><span class="pln">
+                                    class="pun">(</span><span class="str">'attribute_name'</span><span
+                                    class="pun">);</span><span class="pln">
 </span></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu-scroll-spy" class="col-md-3" role="complementary">
+                        <ul id="doc-side-nav-id" class="nav doc-sidenav affix-top" data-spy="affix" data-offset-top="255">
+                            <li class="active"><a href="#functions">JSmart functions</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div id="menu-scroll-spy" class="col-md-3" role="complementary">
-                <ul id="doc-side-nav-id" class="nav doc-sidenav affix-top" data-spy="affix" data-offset-top="255">
-                    <li class="active"><a href="#functions">JSmart functions</a></li>
-                </ul>
+        </main>
+        <footer>
+            <div class="container">
+                <p> Code licensed under <a id="lsy3fyplboro6"
+                    href="http://www.gnu.org/licenses/lgpl-3.0.html"
+                    class="btn btn-link link-plain" target="_blank"> GNU Lesser
+                    General Public License, Version 3.0 </a> <br> Created by <a id="x4kubgenvsneg"
+                        href="https://br.linkedin.com/in/jefalbino"
+                        class="btn btn-link link-plain" target="_blank">
+                    Jeferson Albino </a> <br> Clone the JSmart Web Framework on <a id="xy7etzmi2lcku"
+                        href="https://github.com/jefalbino/jsmart-web"
+                        class="btn btn-link link-plain" target="_blank">
+                    GitHub </a>
+                </p>
             </div>
-        </div>
-    </div>
-</main>
-<footer>
-    <div class="container"><p> Code licensed under <a id="lsy3fyplboro6"
-                                                      href="http://www.gnu.org/licenses/lgpl-3.0.html"
-                                                      class="btn btn-link link-plain" target="_blank"> GNU Lesser
-        General Public License, Version 3.0 </a> <br> Created by <a id="x4kubgenvsneg"
-                                                                    href="https://br.linkedin.com/in/jefalbino"
-                                                                    class="btn btn-link link-plain" target="_blank">
-        Jeferson Albino </a> <br> Clone the JSmart Web Framework on <a id="xy7etzmi2lcku"
-                                                                       href="https://github.com/jefalbino/jsmart-web"
-                                                                       class="btn btn-link link-plain" target="_blank">
-        GitHub </a></p></div>
-</footer>
-<script type="text/javascript" src="/jsmart/js/jsmart.min.js"></script>
-<script type="text/javascript" src="/prettify/prettify.js"></script>
-</body>
+        </footer>
+        <script type="text/javascript" src="/jsmart/js/jsmart.min.js"></script>
+        <script type="text/javascript" src="/prettify/prettify.js"></script>
+    </body>
 </html>

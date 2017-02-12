@@ -1,318 +1,368 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html prefix="og: http://ogp.me/ns#">
-<head>
-    <link rel="stylesheet" type="text/css" href="/jsmart/css/jsmart.min.css">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="JSmart Web Framework - Java Web Development Framework">
-    <meta property="og:description" content="JSmart is a powerful, open source, web framework for the Java platform aimed to improve developers productivity and experience thanks to easy and centralized way to setup the application, variety of web components integrated with Bootstrap v3.3.5, action based programming, asynchronous programming and integration with Spring 4 and EJB 3.">
-    <meta property="og:url" content="http://www.jsmartframework.com">
-    <meta property="og:image" content="http://www.jsmartframework.com/logo.png">
-    <title>JSmart Web Framework - Java Web Development Framework</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/prettify/prettify.css">
-    <script async="" src="//www.google-analytics.com/analytics.js"></script>
-    <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-69775107-1', 'auto');
-          ga('send', 'pageview');
-    </script>
-</head>
-<body data-spy="scroll" data-target="#menu-scroll-spy" onload="prettyPrint();">
-<nav class="main-nav navbar navbar-default">
-    <div class="container container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content">
-                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
-                    class="icon-bar"></span> <span class="icon-bar"></span></button>
-            <a id="ub6ynl5kpm7ce" href="/index.html" class="btn btn-link navbar-brand">JSmart Web Framework</a></div>
-        <div id="navbar-content" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a id="vei5crojdpkwy" href="/starting.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                      id="hlg3ve2valc44"
-                                                                                      class="js5-icon glyphicon glyphicon-pushpin"></span>
-                    Getting Started</a></li>
-                <li><a id="fexz3ecqcykpa" href="/components.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                        id="iafchfbvhsyz6"
-                                                                                        class="js5-icon glyphicon glyphicon-king"></span>
-                    Components</a></li>
-                <li><a id="z6gxcos3ku67o" href="/download.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                      id="y2mria2hr75j2"
-                                                                                      class="js5-icon glyphicon glyphicon-save"></span>
-                    Download</a></li>
-                <li><a id="ighrzxx7tjlc4" href="/examples.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                      id="fulx3tbs3qsj2"
-                                                                                      class="js5-icon glyphicon glyphicon-flash"></span>
-                    Examples</a></li>
-                <li><a id="kpembr7d35m2u" href="/documentation.html" class="btn btn-link"><span side="left"
-                                                                                           aria-hidden="true"
-                                                                                           id="7cs4moepafq3q"
-                                                                                           class="js5-icon glyphicon glyphicon-education"></span>
-                    Documentation</a></li>
-                <li><a id="fpfmmg445cwos" href="/javascript.html" class="btn btn-link"><span side="left" aria-hidden="true"
-                                                                                        id="m3zm6krs62b2q"
-                                                                                        class="js5-icon glyphicon glyphicon-knight"></span>
-                    JavaScript</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<main>
-    <div class="header">
-        <div class="container"><h1>Examples</h1>
-            <p class="lead"> It is easier to run our examples with Maven archetypes ready to use! </p></div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9" role="main">
-                <div class="doc-section"><p> We provide a series of project examples via maven archetypes to help you
-                    accelerate your own project. Have a look on the project examples and set up them using Maven
-                    command. Please check the examples below: </p>
-                    <h1 id="basic" class="page-header"> Basic example </h1>
-                    <p> The basic example provides a web application to submit a form via Ajax request using validate,
-                        alert, input, button, icon and general components, so it can speed up your learning curve with
-                        major components and the framework. </p>
-                    <p> Go to any folder you want the project to be created and enter the following command: </p>
-                    <div class="doc-highlight-only">
-                        <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
-                                class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
-                                class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
-                                class="pln">com</span><span class="pun">.</span><span
-                                class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
-                                class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
-                                class="pln">basic</span><span class="pun">-</span><span
-                                class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
-                                class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
-                                class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
-                                class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
-                                class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
-                    </div>
-                    <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
-                        project. </p>
-                    <p> Afterwards you can access your project named via previously input ${artifactId} and start the
-                        web application using embedded Jetty 9. Check the following commands: </p>
-                    <div class="doc-highlight-only"> <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
-                            class="str">&lt;you_artifact_id&gt;</span><span class="pln">
-mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
-                    </div>
-                    <p> This will start the web container with the web application. To access it, go to browser and
-                        enter the URL <a id="3ioenzs22nixo" href="http://localhost:8080" class="btn btn-link link-plain"
-                                         target="_blank">http://localhost:8080</a>. </p>
-                    <h1 id="auth" class="page-header"> Authentication example </h1>
-                    <p> The authentication and authorization example provides a web application with login and home
-                        pages to control authorized access to pages besides the login, logout and access roles for each
-                        page. This example speed you up on how to work with the framework to easily provide
-                        authentication and authorization control for your web application. </p>
-                    <p> Go to any folder you want the project to be created and enter the following command: </p>
-                    <div class="doc-highlight-only">
-                        <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
-                                class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
-                                class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
-                                class="pln">com</span><span class="pun">.</span><span
-                                class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
-                                class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
-                                class="pln">aa</span><span class="pun">-</span><span class="pln">archetype </span><span
-                                class="pun">-</span><span class="typ">DarchetypeVersion</span><span class="pun">=</span><span
-                                class="lit">1.0</span><span class="pun">.</span><span class="lit">0</span><span
-                                class="pln"> </span><span class="pun">-</span><span class="typ">DarchetypeCatalog</span><span
-                                class="pun">=</span><span class="pln">http</span><span class="pun">:</span><span
-                                class="com">//www.jsmartframework.com</span></pre>
-                    </div>
-                    <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
-                        project. </p>
-                    <p> Afterwards you can access your project named via previously input ${artifactId} and start the
-                        web application using embedded Jetty 9. Check the following commands: </p>
-                    <div class="doc-highlight-only"> <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
-                            class="str">&lt;you_artifact_id&gt;</span><span class="pln">
-mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
-                    </div>
-                    <p> This will start the web container with the web application. To access it, go to browser and
-                        enter the URL <a id="cyopmd6ctxbku" href="http://localhost:8080" class="btn btn-link link-plain"
-                                         target="_blank">http://localhost:8080</a>. </p>
-                    <h1 id="file" class="page-header"> File handling example </h1>
-                    <p> The file example provides a web application with upload and download capabilities besides the
-                        use of some complex components such as list component that uses dynamic scroll behavior. This
-                        example speed you up on how to work with complex components and introduce you utility classes
-                        for handling customized response. </p>
-                    <p> Go to any folder you want the project to be created and enter the following command: </p>
-                    <div class="doc-highlight-only">
-                        <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
-                                class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
-                                class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
-                                class="pln">com</span><span class="pun">.</span><span
-                                class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
-                                class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
-                                class="pln">file</span><span class="pun">-</span><span
-                                class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
-                                class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
-                                class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
-                                class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
-                                class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
-                    </div>
-                    <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
-                        project. </p>
-                    <p> Afterwards you can access your project named via previously input ${artifactId} and start the
-                        web application using embedded Jetty 9. Check the following commands: </p>
-                    <div class="doc-highlight-only"> <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
-                            class="str">&lt;you_artifact_id&gt;</span><span class="pln">
-mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
-                    </div>
-                    <p> This will start the web container with the web application. To access it, go to browser and
-                        enter the URL <a id="fvhe5zfdkre26" href="http://localhost:8080" class="btn btn-link link-plain"
-                                         target="_blank">http://localhost:8080</a>. </p>
-                    <h1 id="rest" class="page-header"> Rest example </h1>
-                    <p> This example provide a web application that exposes REST interface via RequestPath annotation
-                        from the JSmart framework. It also introduce you on how to work with rest component and other
-                        utility classes to provide customized responses. </p>
-                    <p> Go to any folder you want the project to be created and enter the following command: </p>
-                    <div class="doc-highlight-only">
-                        <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
-                                class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
-                                class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
-                                class="pln">com</span><span class="pun">.</span><span
-                                class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
-                                class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
-                                class="pln">rest</span><span class="pun">-</span><span
-                                class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
-                                class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
-                                class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
-                                class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
-                                class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
-                    </div>
-                    <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
-                        project. </p>
-                    <p> Afterwards you can access your project named via previously input ${artifactId} and start the
-                        web application using embedded Jetty 9. Check the following commands: </p>
-                    <div class="doc-highlight-only"> <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
-                            class="str">&lt;you_artifact_id&gt;</span><span class="pln">
-mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
-                    </div>
-                    <p> This will start the web container with the web application. To access it, go to browser and
-                        enter the URL <a id="4go54kh7wurag" href="http://localhost:8080" class="btn btn-link link-plain"
-                                         target="_blank">http://localhost:8080</a>. </p>
-                    <h1 id="async" class="page-header"> Event stream example </h1>
-                    <p> The async example introduce you the capability to keep alive asynchronous context between server
-                        and client in which you are able to push any event to client side including event-stream, as
-                        known as Server-Sent Events. </p>
-                    <p> Go to any folder you want the project to be created and enter the following command: </p>
-                    <div class="doc-highlight-only">
-                        <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
-                                class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
-                                class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
-                                class="pln">com</span><span class="pun">.</span><span
-                                class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
-                                class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
-                                class="pln">async</span><span class="pun">-</span><span
-                                class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
-                                class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
-                                class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
-                                class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
-                                class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
-                    </div>
-                    <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
-                        project. </p>
-                    <p> Afterwards you can access your project named via previously input ${artifactId} and start the
-                        web application using embedded Jetty 9. Check the following commands: </p>
-                    <div class="doc-highlight-only"> <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
-                            class="str">&lt;you_artifact_id&gt;</span><span class="pln">
-mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
-                    </div>
-                    <p> This will start the web container with the web application. To access it, go to browser and
-                        enter the URL <a id="kti4jxk5y6i3c" href="http://localhost:8080" class="btn btn-link link-plain"
-                                         target="_blank">http://localhost:8080</a>. </p>
-                    <h1 id="dynamic" class="page-header"> Dynamic scroll example </h1>
-                    <p> Dynamic scroll application is a web application that shows how to work with lists and tables on
-                        server via adapter classes and directly on client side through functional JavaScript library
-                        available for dealing with complex components. </p>
-                    <p> Go to any folder you want the project to be created and enter the following command: </p>
-                    <div class="doc-highlight-only">
-                        <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
-                                class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
-                                class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
-                                class="pln">com</span><span class="pun">.</span><span
-                                class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
-                                class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
-                                class="pln">scroll</span><span class="pun">-</span><span
-                                class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
-                                class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
-                                class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
-                                class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
-                                class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
-                    </div>
-                    <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
-                        project. </p>
-                    <p> Afterwards you can access your project named via previously input ${artifactId} and start the
-                        web application using embedded Jetty 9. Check the following commands: </p>
-                    <div class="doc-highlight-only"> <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
-                            class="str">&lt;you_artifact_id&gt;</span><span class="pln">
-mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
-                    </div>
-                    <p> This will start the web container with the web application. To access it, go to browser and
-                        enter the URL <a id="eqkc5qfhfug56" href="http://localhost:8080" class="btn btn-link link-plain"
-                                         target="_blank">http://localhost:8080</a>. </p>
-                    <h1 id="path" class="page-header"> Dynamic path example </h1>
-                    <p> Dynamic path application is a web application responsible to manage dynamic resource path so you
-                        can have unique access per path created by WebBean. This application also introduce you some
-                        useful capabilities for utility classes to handle request and response and also async events
-                        handling. </p>
-                    <p> Go to any folder you want the project to be created and enter the following command: </p>
-                    <div class="doc-highlight-only">
-                        <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
-                                class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
-                                class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
-                                class="pln">com</span><span class="pun">.</span><span
-                                class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
-                                class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
-                                class="pln">path</span><span class="pun">-</span><span
-                                class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
-                                class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
-                                class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
-                                class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
-                                class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
-                    </div>
-                    <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
-                        project. </p>
-                    <p> Afterwards you can access your project named via previously input ${artifactId} and start the
-                        web application using embedded Jetty 9. Check the following commands: </p>
-                    <div class="doc-highlight-only"> <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
-                            class="str">&lt;you_artifact_id&gt;</span><span class="pln">
-mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
-                    </div>
-                    <p> This will start the web container with the web application. To access it, go to browser and
-                        enter the URL <a id="zaj2hzvxnbljq" href="http://localhost:8080" class="btn btn-link link-plain"
-                                         target="_blank">http://localhost:8080</a>. </p></div>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/jsmart/css/jsmart.min.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="JSmart Web Framework - Java Web Development Framework">
+        <meta property="og:description" content="JSmart is a powerful, open source, web framework for the Java platform aimed to improve developers productivity and experience thanks to easy and centralized way to setup the application, variety of web components integrated with Bootstrap v3.3.5, action based programming, asynchronous programming and integration with Spring 4 and EJB 3.">
+        <meta property="og:url" content="http://www.jsmartframework.com">
+        <meta property="og:image" content="http://www.jsmartframework.com/logo.png">
+        <title>JSmart Web Framework - Java Web Development Framework</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/prettify/prettify.css">
+        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-69775107-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body data-spy="scroll" data-target="#menu-scroll-spy" onload="prettyPrint();">
+        <nav class="main-nav navbar navbar-default">
+            <div class="container container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span></button>
+                    <a id="ub6ynl5kpm7ce" href="/index.html" class="btn btn-link navbar-brand">JSmart Web Framework</a>
+                </div>
+                <div id="navbar-content" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a id="vei5crojdpkwy" href="/starting.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="hlg3ve2valc44"
+                            class="js5-icon glyphicon glyphicon-pushpin"></span>
+                            Getting Started</a>
+                        </li>
+                        <li><a id="fexz3ecqcykpa" href="/components.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="iafchfbvhsyz6"
+                            class="js5-icon glyphicon glyphicon-king"></span>
+                            Components</a>
+                        </li>
+                        <li><a id="z6gxcos3ku67o" href="/download.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="y2mria2hr75j2"
+                            class="js5-icon glyphicon glyphicon-save"></span>
+                            Download</a>
+                        </li>
+                        <li><a id="ighrzxx7tjlc4" href="/examples.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="fulx3tbs3qsj2"
+                            class="js5-icon glyphicon glyphicon-flash"></span>
+                            Examples</a>
+                        </li>
+                        <li><a id="kpembr7d35m2u" href="/documentation.html" class="btn btn-link"><span side="left"
+                            aria-hidden="true"
+                            id="7cs4moepafq3q"
+                            class="js5-icon glyphicon glyphicon-education"></span>
+                            Documentation</a>
+                        </li>
+                        <li><a id="fpfmmg445cwos" href="/javascript.html" class="btn btn-link"><span side="left" aria-hidden="true"
+                            id="m3zm6krs62b2q"
+                            class="js5-icon glyphicon glyphicon-knight"></span>
+                            JavaScript</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div id="menu-scroll-spy" class="col-md-3" role="complementary">
-                <ul id="doc-side-nav-id" class="nav doc-sidenav affix-top" data-spy="affix" data-offset-top="255">
-                    <li class="active"><a href="#basic">Basic example</a></li>
-                    <li><a href="#auth">Authentication example</a></li>
-                    <li><a href="#file">File handling example</a></li>
-                    <li><a href="#rest">Rest example</a></li>
-                    <li><a href="#async">Event stream example</a></li>
-                    <li><a href="#dynamic">Dynamic scroll example</a></li>
-                    <li><a href="#path">Dynamic path example</a></li>
-                </ul>
+        </nav>
+        <main>
+            <div class="header">
+                <div class="container">
+                    <h1>Examples</h1>
+                    <p class="lead"> It is easier to run our examples with Maven archetypes ready to use! </p>
+                </div>
             </div>
-        </div>
-    </div>
-</main>
-<footer>
-    <div class="container"><p> Code licensed under <a id="6fnr35ebypzmk"
-                                                      href="http://www.gnu.org/licenses/lgpl-3.0.html"
-                                                      class="btn btn-link link-plain" target="_blank"> GNU Lesser
-        General Public License, Version 3.0 </a> <br> Created by <a id="2qiy6hbyqquus"
-                                                                    href="https://br.linkedin.com/in/jefalbino"
-                                                                    class="btn btn-link link-plain" target="_blank">
-        Jeferson Albino </a> <br> Clone the JSmart Web Framework on <a id="fcasmjcy7w3bg"
-                                                                       href="https://github.com/jefalbino/jsmart-web"
-                                                                       class="btn btn-link link-plain" target="_blank">
-        GitHub </a></p></div>
-</footer>
-<script type="text/javascript" src="/jsmart/js/jsmart.min.js"></script>
-<script type="text/javascript" src="/prettify/prettify.js"></script>
-</body>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9" role="main">
+                        <div class="doc-section">
+                            <p> We provide a series of project examples via maven archetypes to help you
+                                accelerate your own project. Have a look on the project examples and set up them using Maven
+                                command. Please check the examples below: 
+                            </p>
+                            <h1 id="basic" class="page-header"> Basic example </h1>
+                            <p> The basic example provides a web application to submit a form via Ajax request using validate,
+                                alert, input, button, icon and general components, so it can speed up your learning curve with
+                                major components and the framework. 
+                            </p>
+                            <p> Go to any folder you want the project to be created and enter the following command: </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
+                                    class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
+                                    class="pln">com</span><span class="pun">.</span><span
+                                    class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
+                                    class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
+                                    class="pln">basic</span><span class="pun">-</span><span
+                                    class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
+                                    class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
+                                    class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
+                                    class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
+                            </div>
+                            <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
+                                project. 
+                            </p>
+                            <p> Afterwards you can access your project named via previously input ${artifactId} and start the
+                                web application using embedded Jetty 9. Check the following commands: 
+                            </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
+                                    class="str">&lt;you_artifact_id&gt;</span><span class="pln">
+mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
+                            </div>
+                            <p> This will start the web container with the web application. To access it, go to browser and
+                                enter the URL <a id="3ioenzs22nixo" href="http://localhost:8080" class="btn btn-link link-plain"
+                                    target="_blank">http://localhost:8080</a>. 
+                            </p>
+                            <h1 id="auth" class="page-header"> Authentication example </h1>
+                            <p> The authentication and authorization example provides a web application with login and home
+                                pages to control authorized access to pages besides the login, logout and access roles for each
+                                page. This example speed you up on how to work with the framework to easily provide
+                                authentication and authorization control for your web application. 
+                            </p>
+                            <p> Go to any folder you want the project to be created and enter the following command: </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
+                                    class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
+                                    class="pln">com</span><span class="pun">.</span><span
+                                    class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
+                                    class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
+                                    class="pln">aa</span><span class="pun">-</span><span class="pln">archetype </span><span
+                                    class="pun">-</span><span class="typ">DarchetypeVersion</span><span class="pun">=</span><span
+                                    class="lit">1.0</span><span class="pun">.</span><span class="lit">0</span><span
+                                    class="pln"> </span><span class="pun">-</span><span class="typ">DarchetypeCatalog</span><span
+                                    class="pun">=</span><span class="pln">http</span><span class="pun">:</span><span
+                                    class="com">//www.jsmartframework.com</span></pre>
+                            </div>
+                            <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
+                                project. 
+                            </p>
+                            <p> Afterwards you can access your project named via previously input ${artifactId} and start the
+                                web application using embedded Jetty 9. Check the following commands: 
+                            </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
+                                    class="str">&lt;you_artifact_id&gt;</span><span class="pln">
+mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
+                            </div>
+                            <p> This will start the web container with the web application. To access it, go to browser and
+                                enter the URL <a id="cyopmd6ctxbku" href="http://localhost:8080" class="btn btn-link link-plain"
+                                    target="_blank">http://localhost:8080</a>. 
+                            </p>
+                            <h1 id="file" class="page-header"> File handling example </h1>
+                            <p> The file example provides a web application with upload and download capabilities besides the
+                                use of some complex components such as list component that uses dynamic scroll behavior. This
+                                example speed you up on how to work with complex components and introduce you utility classes
+                                for handling customized response. 
+                            </p>
+                            <p> Go to any folder you want the project to be created and enter the following command: </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
+                                    class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
+                                    class="pln">com</span><span class="pun">.</span><span
+                                    class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
+                                    class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
+                                    class="pln">file</span><span class="pun">-</span><span
+                                    class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
+                                    class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
+                                    class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
+                                    class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
+                            </div>
+                            <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
+                                project. 
+                            </p>
+                            <p> Afterwards you can access your project named via previously input ${artifactId} and start the
+                                web application using embedded Jetty 9. Check the following commands: 
+                            </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
+                                    class="str">&lt;you_artifact_id&gt;</span><span class="pln">
+mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
+                            </div>
+                            <p> This will start the web container with the web application. To access it, go to browser and
+                                enter the URL <a id="fvhe5zfdkre26" href="http://localhost:8080" class="btn btn-link link-plain"
+                                    target="_blank">http://localhost:8080</a>. 
+                            </p>
+                            <h1 id="rest" class="page-header"> Rest example </h1>
+                            <p> This example provide a web application that exposes REST interface via RequestPath annotation
+                                from the JSmart framework. It also introduce you on how to work with rest component and other
+                                utility classes to provide customized responses. 
+                            </p>
+                            <p> Go to any folder you want the project to be created and enter the following command: </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
+                                    class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
+                                    class="pln">com</span><span class="pun">.</span><span
+                                    class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
+                                    class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
+                                    class="pln">rest</span><span class="pun">-</span><span
+                                    class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
+                                    class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
+                                    class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
+                                    class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
+                            </div>
+                            <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
+                                project. 
+                            </p>
+                            <p> Afterwards you can access your project named via previously input ${artifactId} and start the
+                                web application using embedded Jetty 9. Check the following commands: 
+                            </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
+                                    class="str">&lt;you_artifact_id&gt;</span><span class="pln">
+mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
+                            </div>
+                            <p> This will start the web container with the web application. To access it, go to browser and
+                                enter the URL <a id="4go54kh7wurag" href="http://localhost:8080" class="btn btn-link link-plain"
+                                    target="_blank">http://localhost:8080</a>. 
+                            </p>
+                            <h1 id="async" class="page-header"> Event stream example </h1>
+                            <p> The async example introduce you the capability to keep alive asynchronous context between server
+                                and client in which you are able to push any event to client side including event-stream, as
+                                known as Server-Sent Events. 
+                            </p>
+                            <p> Go to any folder you want the project to be created and enter the following command: </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
+                                    class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
+                                    class="pln">com</span><span class="pun">.</span><span
+                                    class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
+                                    class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
+                                    class="pln">async</span><span class="pun">-</span><span
+                                    class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
+                                    class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
+                                    class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
+                                    class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
+                            </div>
+                            <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
+                                project. 
+                            </p>
+                            <p> Afterwards you can access your project named via previously input ${artifactId} and start the
+                                web application using embedded Jetty 9. Check the following commands: 
+                            </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
+                                    class="str">&lt;you_artifact_id&gt;</span><span class="pln">
+mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
+                            </div>
+                            <p> This will start the web container with the web application. To access it, go to browser and
+                                enter the URL <a id="kti4jxk5y6i3c" href="http://localhost:8080" class="btn btn-link link-plain"
+                                    target="_blank">http://localhost:8080</a>. 
+                            </p>
+                            <h1 id="dynamic" class="page-header"> Dynamic scroll example </h1>
+                            <p> Dynamic scroll application is a web application that shows how to work with lists and tables on
+                                server via adapter classes and directly on client side through functional JavaScript library
+                                available for dealing with complex components. 
+                            </p>
+                            <p> Go to any folder you want the project to be created and enter the following command: </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
+                                    class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
+                                    class="pln">com</span><span class="pun">.</span><span
+                                    class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
+                                    class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
+                                    class="pln">scroll</span><span class="pun">-</span><span
+                                    class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
+                                    class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
+                                    class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
+                                    class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
+                            </div>
+                            <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
+                                project. 
+                            </p>
+                            <p> Afterwards you can access your project named via previously input ${artifactId} and start the
+                                web application using embedded Jetty 9. Check the following commands: 
+                            </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
+                                    class="str">&lt;you_artifact_id&gt;</span><span class="pln">
+mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
+                            </div>
+                            <p> This will start the web container with the web application. To access it, go to browser and
+                                enter the URL <a id="eqkc5qfhfug56" href="http://localhost:8080" class="btn btn-link link-plain"
+                                    target="_blank">http://localhost:8080</a>. 
+                            </p>
+                            <h1 id="path" class="page-header"> Dynamic path example </h1>
+                            <p> Dynamic path application is a web application responsible to manage dynamic resource path so you
+                                can have unique access per path created by WebBean. This application also introduce you some
+                                useful capabilities for utility classes to handle request and response and also async events
+                                handling. 
+                            </p>
+                            <p> Go to any folder you want the project to be created and enter the following command: </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">mvn archetype</span><span
+                                    class="pun">:</span><span class="pln">generate </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeGroupId</span><span class="pun">=</span><span
+                                    class="pln">com</span><span class="pun">.</span><span
+                                    class="pln">jsmartframework </span><span class="pun">-</span><span class="typ">DarchetypeArtifactId</span><span
+                                    class="pun">=</span><span class="pln">jsmart</span><span class="pun">-</span><span
+                                    class="pln">path</span><span class="pun">-</span><span
+                                    class="pln">archetype </span><span class="pun">-</span><span class="typ">DarchetypeVersion</span><span
+                                    class="pun">=</span><span class="lit">1.0</span><span class="pun">.</span><span
+                                    class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span
+                                    class="typ">DarchetypeCatalog</span><span class="pun">=</span><span
+                                    class="pln">http</span><span class="pun">:</span><span class="com">//www.jsmartframework.com</span></pre>
+                            </div>
+                            <p> You will be prompted to enter the ${groupId}, ${artifactId}, ${version} and ${package} for your
+                                project. 
+                            </p>
+                            <p> Afterwards you can access your project named via previously input ${artifactId} and start the
+                                web application using embedded Jetty 9. Check the following commands: 
+                            </p>
+                            <div class="doc-highlight-only">
+                                <pre class="prettyprint prettyprinted"><span class="pln">cd </span><span
+                                    class="str">&lt;you_artifact_id&gt;</span><span class="pln">
+mvn compile jetty</span><span class="pun">:</span><span class="pln">run</span></pre>
+                            </div>
+                            <p> This will start the web container with the web application. To access it, go to browser and
+                                enter the URL <a id="zaj2hzvxnbljq" href="http://localhost:8080" class="btn btn-link link-plain"
+                                    target="_blank">http://localhost:8080</a>. 
+                            </p>
+                        </div>
+                    </div>
+                    <div id="menu-scroll-spy" class="col-md-3" role="complementary">
+                        <ul id="doc-side-nav-id" class="nav doc-sidenav affix-top" data-spy="affix" data-offset-top="255">
+                            <li class="active"><a href="#basic">Basic example</a></li>
+                            <li><a href="#auth">Authentication example</a></li>
+                            <li><a href="#file">File handling example</a></li>
+                            <li><a href="#rest">Rest example</a></li>
+                            <li><a href="#async">Event stream example</a></li>
+                            <li><a href="#dynamic">Dynamic scroll example</a></li>
+                            <li><a href="#path">Dynamic path example</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <p> Code licensed under <a id="6fnr35ebypzmk"
+                    href="http://www.gnu.org/licenses/lgpl-3.0.html"
+                    class="btn btn-link link-plain" target="_blank"> GNU Lesser
+                    General Public License, Version 3.0 </a> <br> Created by <a id="2qiy6hbyqquus"
+                        href="https://br.linkedin.com/in/jefalbino"
+                        class="btn btn-link link-plain" target="_blank">
+                    Jeferson Albino </a> <br> Clone the JSmart Web Framework on <a id="fcasmjcy7w3bg"
+                        href="https://github.com/jefalbino/jsmart-web"
+                        class="btn btn-link link-plain" target="_blank">
+                    GitHub </a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="/jsmart/js/jsmart.min.js"></script>
+        <script type="text/javascript" src="/prettify/prettify.js"></script>
+    </body>
 </html>
